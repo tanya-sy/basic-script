@@ -15,6 +15,9 @@ chmod +x /etc/rc.d/rc.local
 
 yum install -y bash-completion rsync  vim wget ntpdate lrzsz  net-tools
 
+####ntpdate time
+echo "*/30 * * * * /usr/sbin/ntpdate time7.aliyun.com >/dev/null 2>&1" >> /var/spool/cron/root
+
 
 ##获得系统的基本信息
 ##memory
