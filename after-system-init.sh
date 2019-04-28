@@ -12,7 +12,7 @@ sed -i 's/GSSAPIAuthentication yes/GSSAPIAuthentication no/g' /etc/ssh/sshd_conf
 chmod +x /etc/rc.d/rc.local
 
 
-yum install -y bash-completion rsync  vim wget ntpdate lrzsz  net-tools htop lsof 
+yum install -y bash-completion rsync  vim wget ntpdate lrzsz  net-tools htop lsof telnet 
 
 ####ntpdate time
 echo "*/30 * * * * /usr/sbin/ntpdate time7.aliyun.com >/dev/null 2>&1" >> /var/spool/cron/root
