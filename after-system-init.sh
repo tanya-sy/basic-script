@@ -18,8 +18,8 @@ yum install -y bash-completion rsync  vim wget ntpdate lrzsz  net-tools htop lso
 echo "*/30 * * * * /usr/sbin/ntpdate time7.aliyun.com >/dev/null 2>&1" >> /var/spool/cron/root
 
 ###增大文件描述符
-echo "* - nofile 65535" >>/etc/security/limits.conf
-echo "* - noproc 65535" >>/etc/security/limits.conf
+echo "* - nofile 65536" >>/etc/security/limits.conf
+echo "* - noproc 65536" >>/etc/security/limits.conf
 
 ##获得系统的基本信息
 ##memory
