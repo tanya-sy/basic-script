@@ -1,0 +1,1 @@
+#想要实现Sonarqube分支级别的扫描可以使用插件 Sonarqube Community Branch Plugin
